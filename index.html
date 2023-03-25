@@ -1,147 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Caffe-Z</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<style>
-body, html {
-  height: 110%;
- 
-  font-family: "Inconsolata", sans-serif;
-}
-
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/4495949395_57db226869.jpg");
-  min-height: 80%;
-}
-header {
-    position: fixed;
-    top: 0px;
-}
-
-.logo {
-    height: 4rem;
-    width: 4rem;
-    margin-left: 1rem;
-}
-
-header nav {
-    margin-right: 15rem;
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-
-}
-
-header nav ul li {
-    margin-left: 1.3rem;
-    list-style: none;
-    font-weight: bold;
-    transition: 0.3s;
-    color: white;
-}
-
-header nav ul li:hover {
-    color: rgb(0, 0, 0);
-}
-
-.home {
-
-    text-align: center;
-    width: 50rem;
-    height: 15rem;
-    margin-top: 10rem;
-    margin-left: 5rem;
-}
-
-.home h1 {
-    font-weight: bold;
-    color: rgb(7, 6, 6);
-
-}
-
-.home p {
-    font-weight: bold;
-    color: white;
-}
-
-.user-inputs {
-    color: rgb(0, 0, 0);
-
-}
-
-.page2 {
-    background-color: rgba(255, 255, 255, 0.403);
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border-radius: 30px;
-}
-
-.page2 h4 {
-    margin-bottom: 3rem;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffe-Z</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
+  <style>
+    body {
+      background-image: url(/OIP.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 46rem;
+     }
+    header {
+      width: 100%;
+      height: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     }
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
-    </div>
-  </div>
-   
-</div>
- 
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    header {
+      position: fixed;
+      top: 0px;
+     }
 
-    <section class="page2" id="OrderNow">
+    .logo {
+      height: 4rem;
+      width: 4rem;
+      margin-left: 1rem;
+     }
+
+    header nav {
+      margin-right: 15rem;
+     }
+    header nav ul {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+     }
+
+    header nav ul li {
+      margin-left: 1.3rem;
+      list-style: none;
+      font-weight: bold;
+      transition: 0.3s;
+      color: rgb(255, 251, 251);
+     }
+    header nav ul li:hover {
+      color: rgb(12, 11, 11);
+     }
+    .home {
+      text-align: center;
+      width: 50rem;
+      height: 15rem;
+      margin-top: 10rem;
+      margin-left: 5rem;
+     }
+    .home h1 {
+      font-weight: bold;
+      color: rgb(8, 7, 7);
+      background-color: rgba(255, 255, 255, 0.403);
+      border-radius: 30px;
+     }
+    .home p {
+      font-weight: bold;
+      color: rgb(223, 214, 214);  
+     }
+    .user-inputs {
+      color: rgb(7, 6, 6);
+     } 
+    .page2 {
+      background-color: rgba(255, 255, 255, 0.403);
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-radius: 30px;
+     }
+    .page2 h4 {
+      margin-bottom: 3rem;
+     }
+  </style>
+
+  <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Menue</li>
+                    <a href="#OrderNow" style="text-decoration: none;"><li>Order Now</li> </a>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <section class="w3-button w3-block w3-black">
+            <section class="home">
                 <div>
-                    <br><br>
-                    <h1>welcome to my coffe store</h1>
+                    <h1>welcome to my coffee store</h1>
+                  
                 </div>
         </main>
-        <br><br><br>
+    </section>
+    <section class="page2" id="OrderNow">
         <h4>Order Now</h4>
         <form action="" id="formOrder">
             <label for="userName">Name :</label>
-            <input type="text" name="userName" id="" value="">   
+            <input type="text" name="userName" id="" value="">  
             <br>
             <br>
             <label for="age">Age :</label>
-            <input type="text" name="age" id="" value="">     
+            <input type="text" name="age" id="" value="">    
             <br>
             <br>
             <label for="cold hot">Drink type :</label>
-            <input type="checkbox" name="cold" id="" value="">   
+            <input type="checkbox" name="cold" id="" value="">     
             <label for="cold">Cold</label>
             <input type="checkbox" name="hot" id="" value="">            
             <label for="hot">Hot</label>
@@ -151,7 +132,7 @@ header nav ul li:hover {
             <input type="text" name="drinkName" id="" value="">         
             <br>
             <br>
-            <button type="submit">Let's go</button>          
+            <button type="submit">Let's go</button>       
         </form>
         <br>
         <br>
@@ -159,14 +140,15 @@ header nav ul li:hover {
             
         </div>
     </section>
-</header> 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-crossorigin="anonymous"></script>
- </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-<script src="/app.js"></script>
+
+<script src="./app.js"></script>
+
 </html>
